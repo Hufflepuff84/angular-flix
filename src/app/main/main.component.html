@@ -1,0 +1,16 @@
+<div>
+    <header class="Header">
+      <app-logo></app-logo>
+        <app-navigation></app-navigation>
+        <app-search-box></app-search-box>
+      <div style="margin-left: 600px;">
+        <app-user-profile></app-user-profile>
+      </div>
+    </header>
+    <app-hero></app-hero>
+    <app-title-list
+      title="Search Results"
+      [movies]="searchResults"
+    ></app-title-list>
+    <app-title-list title="My Movies" [movies]="myMovieList"></app-title-list>
+  </div>
